@@ -1,0 +1,7 @@
+Я юзал ВСкод компиляция осуществляется так:
+Для первого задания
+gcc -Wall -Wextra -Werror pong.c -o pong(имя можете поменять)
+./pong
+Для второго задания
+ gcc -Wall -Wextra -Werror pong_interactive.c  -lncurses -o pong_interactive(имя можете поменять)
+./pong_interactive
