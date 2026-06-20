@@ -5,7 +5,7 @@ void draw_field(int p1_y, int p2_y, int ball_x, int ball_y, int score1,
   // Очистка терминала с помощью ANSI escape-последовательности (system()
   // запрещен)
   printf("\033[H\033[J");
-  printf("        Игрок 1: %d                          Игрок 2: %d\n", score1,
+  printf("        Player 1: %d                          Player 2: %d\n", score1,
          score2);
 
   // Поле 80 на 25
@@ -115,9 +115,9 @@ int main() {
   // Вывод победителя
   printf("\033[H\033[J"); // Очистка перед финальным экраном
   if (score1 == 21) {
-    printf("Поздравляем! Игрок 1 победил!\n");
+    printf("Congratulations! Player 1 won!\n");
   } else {
-    printf("Поздравляем! Игрок 2 победил!\n");
+    printf("Congratulations! Player 2 won!\n");
   }
   return 0;
 }

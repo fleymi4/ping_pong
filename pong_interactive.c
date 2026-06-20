@@ -29,8 +29,8 @@ int main() {
   initscr();
   cbreak();
   noecho();
-  nodelay(stdscr, TRUE); // Не ждать ввода пользователя (для real-time)
-  curs_set(0); // Скрыть курсор
+  nodelay(stdscr, TRUE); // Не ждать ввода пользователя
+  curs_set(0);           // Скрыть курсор
 
   int p1_y = 12, p2_y = 12;
   int ball_x = 40, ball_y = 12;
@@ -98,7 +98,7 @@ int main() {
   if (score1 == 21) {
     mvprintw(12, 30, "Congratulations! Player 1 won!");
   } else {
-    mvprintw(12, 30, "Congratulations! Player 1 won!");
+    mvprintw(12, 30, "Congratulations! Player 2 won!");
   }
   mvprintw(14, 25, "Press any key to exit...");
   refresh();
